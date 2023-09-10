@@ -14,8 +14,10 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
+        // karaktere z ekseni yönünde(ileri doðru) belirli bir hýzda hareket verdik 
+
         Vector3 newPosition = new Vector3(transform.position.x, transform.position.y,
-            transform.position.z + runningSpeed* Time.deltaTime);
+            transform.position.z + runningSpeed * Time.deltaTime);
         transform.position = newPosition;
     }
 }
